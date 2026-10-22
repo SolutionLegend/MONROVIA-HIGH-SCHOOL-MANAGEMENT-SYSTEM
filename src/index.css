@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Sunlight High-Contrast Mode for intense outdoor African sun */
+html.high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast .bg-slate-900,
+html.high-contrast .bg-slate-900\/90,
+html.high-contrast .bg-slate-900\/95,
+html.high-contrast .bg-slate-950,
+html.high-contrast .bg-slate-800,
+html.high-contrast .bg-slate-800\/80,
+html.high-contrast .bg-slate-800\/90 {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+html.high-contrast .text-slate-400,
+html.high-contrast .text-slate-300,
+html.high-contrast .text-slate-500 {
+  color: #e2e8f0 !important;
+}
+
+html.high-contrast input,
+html.high-contrast select {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* Print Styles for official PDF and paper reports */
+@media print {
+  @page {
+    margin: 1cm;
+    size: portrait;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header,
+  nav,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+}

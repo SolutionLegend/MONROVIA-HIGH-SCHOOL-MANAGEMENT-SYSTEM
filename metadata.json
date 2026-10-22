@@ -1,0 +1,6 @@
+{
+  "name": "Monrovia High SMS",
+  "description": "Tactical mobile-first School Management PWA for Monrovia High School with fast attendance, grade calculations, and tuition debtor alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
